@@ -14,8 +14,7 @@ namespace workshop.Migrations
                 name: "student_register",
                 columns: table => new
                 {
-                    student_id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    student_id = table.Column<int>(type: "int", nullable: false).Annotation("SqlServer:Identity", "1, 1"),
                     student_name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     student_email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     student_password = table.Column<string>(type: "nvarchar(max)", nullable: false)

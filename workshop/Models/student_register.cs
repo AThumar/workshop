@@ -13,10 +13,7 @@ namespace workshop.Models
         public string student_name { get; set; }
         [Required, NotNull]
 
-        public string student_email { get; set; }
-        [Required, NotNull]
-
-        public string student_password { get; set; }
-
+        public string student_description { get; set; }
+       
     }
 }
